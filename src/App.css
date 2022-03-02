@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'SFProText-Regular';
+  src: local('Lato'), url(./fonts/SFProText-Regular.ttf) format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'SFProText-Medium';
+  font-weight: 900;
+  src: local('Lato'), url(./fonts/SFProText-Medium.ttf) format('truetype');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: 'SFProText-Bold';
+  font-weight: 900;
+  src: local('Lato'), url(./fonts/SFProText-Bold.ttf) format('truetype');
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: 'SFProText-Heavy';
+  font-weight: 900;
+  src: local('Lato'), url(./fonts/SFProText-Heavy.ttf) format('truetype');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: 'SFProText-SemiBold';
+  font-weight: 900;
+  src: local('Lato'), url(./fonts/SFProText-Semibold.ttf) format('truetype');
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  transition: 0.3s all;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
